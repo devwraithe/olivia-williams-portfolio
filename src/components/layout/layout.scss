@@ -1,0 +1,8 @@
+// import scss files
+@import "../../assets/styles/scss/global.scss";
+
+// layout
+.layout {
+  @include padx;
+  margin: 0;
+}
