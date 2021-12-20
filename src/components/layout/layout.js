@@ -1,5 +1,6 @@
 // import components
 import Navbar from "../navbar/navbar";
+import Footer from "../footer/footer";
 // import styling
 import "./layout.scss";
 
@@ -9,6 +10,7 @@ const Layout = ({ children }) => {
     <div className="layout">
       <Navbar />
       <main>{children}</main>
+      <Footer />
     </div>
   );
 };

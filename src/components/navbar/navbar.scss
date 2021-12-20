@@ -13,6 +13,12 @@
   &__brand {
     font-weight: $bld;
     @include h6;
+
+    // inbuilt from react-router-dom
+    .active {
+      text-decoration: none;
+      color: $dark;
+    }
   }
 
   &__brandLink {
@@ -31,13 +37,13 @@
   }
 
   &__navLink {
-    color: $gray;
+    color: $dark;
     text-decoration: none;
   }
 
   &__navLink:hover,
   &__navLink:focus {
-    color: $dark;
+    color: $green;
     transition: 0.5s all ease;
   }
 
@@ -53,7 +59,7 @@
   &__menu--mod:hover,
   &__menu--mod:focus {
     cursor: pointer;
-    color: $dark;
+    color: $green;
     transition: 0.5s all ease;
   }
 
@@ -92,14 +98,14 @@
     color: $gray;
     text-decoration: none;
     font-weight: $bld;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
   }
 }
 
 // inbuilt from react-router-dom
 .active {
   text-decoration: none;
-  color: $dark;
+  color: $green;
 }
 
 // public
