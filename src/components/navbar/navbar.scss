@@ -1,0 +1,121 @@
+// import globals.scss
+@import "../../assets/styles/scss/global.scss";
+
+// navbar
+.navbar {
+  @include pady;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $dark;
+
+  &__brand {
+    font-weight: $bld;
+    @include h6;
+
+    // inbuilt from react-router-dom
+    .active {
+      text-decoration: none;
+      color: $dark;
+    }
+  }
+
+  &__brandLink {
+    text-decoration: none;
+    color: $dark;
+  }
+
+  &__navLg {
+    font-size: $cap2;
+    font-weight: $bld;
+  }
+
+  &__navItem {
+    padding-left: 3em;
+    letter-spacing: 1px;
+  }
+
+  &__navLink {
+    color: $dark;
+    text-decoration: none;
+  }
+
+  &__navLink:hover,
+  &__navLink:focus {
+    color: $green;
+    transition: 0.5s all ease;
+  }
+
+  // small devices
+  &__menu {
+    position: relative;
+    z-index: 10;
+    font-size: $cap2;
+    font-weight: $bld;
+    letter-spacing: 1px;
+  }
+
+  &__menu--mod:hover,
+  &__menu--mod:focus {
+    cursor: pointer;
+    color: $green;
+    transition: 0.5s all ease;
+  }
+
+  &__overlay {
+    @include media-min(lg-min) {
+      display: none;
+    }
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    overflow: hidden;
+    width: 100vw;
+    height: 100%;
+    background-color: $light;
+  }
+
+  &__overlayInactive {
+    display: none;
+  }
+
+  &__navSm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__navSmItem {
+    @include h5;
+    padding: 0.8em 0;
+  }
+
+  &__navSmLink {
+    color: $dark;
+    text-decoration: none;
+    font-weight: $bld;
+    letter-spacing: 0.5px;
+  }
+}
+
+// inbuilt from react-router-dom
+.active {
+  text-decoration: none;
+  color: $green;
+}
+
+// public
+.noSm {
+  @include media-max(md-max) {
+    display: none;
+  }
+}
+.noLg {
+  @include media-min(lg-min) {
+    display: none;
+  }
+}
