@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import App from "../src/pages/app/app";
+import App from "./pages/app/app";
 // import Work from "./pages/work/work";
 // import SiteRoutes from "./routes.js";
 

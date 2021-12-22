@@ -11,16 +11,16 @@
       padding: 5em 0;
     }
     @include media-min(lg-min) {
-      padding: 5em 4em;
+      padding: 6em 4em;
     }
   }
 
   &__title {
     font-weight: $xbd;
     letter-spacing: 0.7px;
-    @include media-max(md-max) {
+    @include media-max(xs-max) {
       line-height: 165%;
-      fine-height: $h1;
+      font-size: $h2;
     }
     @include media-min(sm-min) {
       line-height: 165%;
