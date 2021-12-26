@@ -28,7 +28,7 @@ function Navbar() {
       </div>
       <div className="navbar__navLg noSm">
         <span className="navbar__navItem">
-          <NavLink to="/work" className="navbar__navLink">
+          <NavLink to="/" className="navbar__navLink">
             WORK
           </NavLink>
         </span>

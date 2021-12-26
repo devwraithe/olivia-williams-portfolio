@@ -6,7 +6,7 @@ import "./footer.scss";
 // footer component
 function Footer() {
   return (
-    <nav className="footer">
+    <footer className="footer">
       <div className="footer__wrapper">
         {/* details */}
         <div className="footer__details noSm">&copy;Olivia Williams 2021</div>
@@ -51,7 +51,7 @@ function Footer() {
         {/* details */}
         <div className="footer__details noLg">&copy; Olivia Williams 2021</div>
       </div>
-    </nav>
+    </footer>
   );
 }
 

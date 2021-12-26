@@ -72,3 +72,19 @@
   cursor: pointer;
   transition: 0.5s all ease-in-out;
 }
+
+// media
+@mixin embed {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+@mixin embed-source {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}

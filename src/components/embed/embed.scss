@@ -1,0 +1,14 @@
+// import globals
+@import "../../assets/styles/scss/global.scss";
+
+// embed component
+.embed {
+  height: 0;
+  width: 100%;
+  @include embed;
+
+  .embed__source {    
+    @include embed-source;
+    width: 100%;
+  }
+}
