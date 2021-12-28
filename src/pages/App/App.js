@@ -1,10 +1,21 @@
 // import components
 import Layout from "../../components/layout/layout";
 import Embed from "../../components/embed/embed";
+import { motion } from "framer-motion";
 import "./app.scss";
 
 // home component
-function App() {
+const App = () => {
+  const itemWrapVariants = {
+    rest: { opacity: 0 },
+    hover: { opacity: 1 },
+  };
+
+  const itemImgVariants = {
+    rest: { opacity: 1 },
+    hover: { opacity: 0 },
+  };
+
   return (
     <div className="index">
       <Layout>
@@ -84,12 +95,105 @@ function App() {
         </section>
         {/* work */}
         <section className="work">
-          <div className="work__wrapper"></div>
+          <div className="work__wrapper">
+            {/* title */}
+            <div className="work__title">
+              <div className="work__line1">
+                <svg width="100px" height="6px">
+                  <path
+                    fill="#191919"
+                    stroke-width="3.5"
+                    stroke="#191919"
+                    d="M0 0 l1120 0"
+                  />
+                </svg>
+              </div>
+              <div className="work__text">THINGS I'VE DONE</div>
+              <div className="work__line2">
+                <svg width="100px" height="6px">
+                  <path
+                    fill="#191919"
+                    stroke-width="3.5"
+                    stroke="#191919"
+                    d="M0 0 l1120 0"
+                  />
+                </svg>
+              </div>
+            </div>
+            {/* content */}
+            <div className="work__content">
+              <motion.div
+                className="work__contentItem"
+                whileHover="hover"
+                animate="rest"
+              >
+                <motion.img
+                  src="http://images.squarespace-cdn.com/content/v1/547fe426e4b0dc192edb1ed5/1589867350400-OMHQTG1DMGE608HEJQ2P/Buy+on+Google_squarespace_banner.png?format=750w"
+                  className="work__contentItemImg"
+                  alt=""
+                  variants={itemImgVariants}
+                />
+                <motion.div
+                  className="work__contentItemWrap"
+                  variants={itemWrapVariants}
+                >
+                  <h1 className="work__contentItemTitle">Buy on Google</h1>
+                  <p className="work__contentItemRole">
+                    BRAND STRATEGY / USER EXPERIENCE
+                  </p>
+                </motion.div>
+              </motion.div>
+              <motion.div
+                className="work__contentItem"
+                whileHover="hover"
+                animate="rest"
+              >
+                <motion.img
+                  src="https://images.squarespace-cdn.com/content/v1/547fe426e4b0dc192edb1ed5/1587231659543-BTAUFQ91UFD8R69J1LUG/loppet_squarespace+banner_ANIMATION.gif?format=750w"
+                  className="work__contentItemImg"
+                  alt=""
+                  variants={itemImgVariants}
+                />
+                <motion.div
+                  className="work__contentItemWrap"
+                  variants={itemWrapVariants}
+                >
+                  <h1 className="work__contentItemTitle">
+                    Loop Winter Festival
+                  </h1>
+                  <p className="work__contentItemRole">
+                    PRINTING / ILLUSTRATION
+                  </p>
+                </motion.div>
+              </motion.div>
+              <motion.div
+                className="work__contentItem"
+                whileHover="hover"
+                animate="rest"
+              >
+                <motion.img
+                  src="https://images.squarespace-cdn.com/content/v1/547fe426e4b0dc192edb1ed5/1581238562474-Z7ERPIDJ660Z9NZPXMQC/squarespace+banner+square_animated.gif?format=750w"
+                  className="work__contentItemImg"
+                  alt=""
+                  variants={itemImgVariants}
+                />
+                <motion.div
+                  className="work__contentItemWrap"
+                  variants={itemWrapVariants}
+                >
+                  <h1 className="work__contentItemTitle"> VisD@</h1>
+                  <p className="work__contentItemRole">
+                    BRANDING / ILLUSTRATION
+                  </p>
+                </motion.div>
+              </motion.div>
+            </div>
+          </div>
         </section>
       </Layout>
     </div>
   );
-}
+};
 
 // export component
 export default App;
