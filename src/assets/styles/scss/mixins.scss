@@ -55,20 +55,25 @@
 
 // buttons
 @mixin button {
-  background-color: transparent;
+  background-color: $dark;
   border: 2px solid $dark;
-  font-family: $century-gothic;
-  font-weight: $sbd;
-  padding: 1.3em 2.2em;
+  color: $light;
+  font-weight: $bld;
+  padding: 1.3em 2.5em;
+  letter-spacing: 0.4px;
   @include media-max(xs-max) {
-    padding-top: 1.45em;
+    padding: 1.5em 2.5em;
   }
   font-size: $btn;
+  font-family: "Libre Franklin", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
 }
 
-@mixin button-hover {
-  background-color: $dark;
-  color: $light;
+@mixin buttonHover {
+  background-color: $light;
+  color: $dark;
+  border: 2px solid $dark;
   cursor: pointer;
   transition: 0.5s all ease-in-out;
 }

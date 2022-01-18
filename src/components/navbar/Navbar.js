@@ -26,10 +26,10 @@ function Navbar() {
           Olivia Williams
         </NavLink>
       </div>
-      <div className="navbar__navLg noSm">
+      <div className="navbar__navLg elem--noSm">
         <span className="navbar__navItem">
           <NavLink to="/" className="navbar__navLink">
-            WORK
+            HOME
           </NavLink>
         </span>
         <span className="navbar__navItem">
@@ -46,7 +46,7 @@ function Navbar() {
 
       {/* small devices */}
       <div
-        className="navbar__menu navbar__menu--mod noLg"
+        className="navbar__menu navbar__menu--mod elem--noLg"
         onClick={onClickOpenOverlay}
       >
         {overlayActive ? "CLOSE" : "MENU"}
@@ -54,13 +54,13 @@ function Navbar() {
       <div
         className={`${
           overlayActive ? "navbar__overlay" : "navbar__overlayInactive"
-        } noLg`}
+        } elem--noLg`}
         ref={overlayDropRef}
       >
-        <div className="navbar__navSm noLg">
+        <div className="navbar__navSm elem--noLg">
           <div className="navbar__navSmItem">
-            <NavLink to="/work" className="navbar__navSmLink">
-              WORK
+            <NavLink to="/" className="navbar__navSmLink">
+              HOME
             </NavLink>
           </div>
           <div className="navbar__navSmItem">

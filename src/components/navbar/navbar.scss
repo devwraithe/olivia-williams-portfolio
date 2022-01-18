@@ -108,13 +108,13 @@
   color: $green;
 }
 
-// public
-.noSm {
+// public classes
+.elem--noSm {
   @include media-max(md-max) {
     display: none;
   }
 }
-.noLg {
+.elem--noLg {
   @include media-min(lg-min) {
     display: none;
   }

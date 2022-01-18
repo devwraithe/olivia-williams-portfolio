@@ -2,6 +2,7 @@
 import Layout from "../../components/layout/layout";
 import Embed from "../../components/embed/embed";
 import { motion } from "framer-motion";
+// import styling
 import "./app.scss";
 
 // home component
@@ -22,37 +23,36 @@ const App = () => {
         {/* header */}
         <header className="header">
           <div className="header__wrapper">
-            <h1 className="header__title">
-              Olivia Williams is a{" "}
-              <span className="header__stroke">talented designer</span> that's
-              focused on <span className="header__stroke">building brands</span>{" "}
-              and creating{" "}
-              <span className="header__stroke">digital experiences...</span>
-            </h1>
-            <div className="header__scroll">
-              <div className="header__line1">
-                <svg width="100" height="100">
-                  <line
-                    x1="50"
-                    x2="50"
-                    y2="100"
-                    stroke="#191919"
-                    stroke-width="1.5"
-                  />
-                </svg>
-              </div>
-              <div className="header__text">keep scrolling</div>
-              <div className="header__line2">
-                <svg width="100" height="100">
-                  <line
-                    x1="50"
-                    x2="50"
-                    y2="100"
-                    stroke="#191919"
-                    stroke-width="1.5"
-                  />
-                </svg>
-              </div>
+            <div className="header__intro">
+              <h1 className="header__title">Hey there, I'm Olivia!</h1>
+              <h4 className="header__subtitle">
+                I'm a UX Researcher and Designer
+              </h4>
+              <span className="header__summary">
+                <p>
+                  I've always been fascinated by the way products are designed
+                  to fit the lives of humans. Whether it's through digital or
+                  physical products designed to make life easier and simpler for
+                  the user. I am extremely passionate about spotting gaps and
+                  loopholes in ideas to create simpler and easier to use
+                  products in the world.
+                </p>
+                <p>
+                  When i'm not working, I'm spending time with my family and
+                  friends playing board games and travelling. I enjoy going out
+                  for drinks, meeting new people and playing football.
+                </p>
+              </span>
+              <button className="header__btn header__btn--hover">
+                Contact Me
+              </button>
+            </div>
+            <div className="header__img">
+              <img
+                className="header__imgSrc"
+                src="https://images.pexels.com/photos/871495/pexels-photo-871495.jpeg"
+                alt="olivia-williams-snapshot"
+              />
             </div>
           </div>
         </header>

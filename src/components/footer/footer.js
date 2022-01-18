@@ -9,7 +9,9 @@ function Footer() {
     <footer className="footer">
       <div className="footer__wrapper">
         {/* details */}
-        <div className="footer__details noSm">&copy;Olivia Williams 2021</div>
+        <div className="footer__details elem--noSm">
+          &copy;Olivia Williams 2021
+        </div>
         {/* social */}
         <div className="footer__social">
           <div className="footer__socialItem">
@@ -49,7 +51,9 @@ function Footer() {
           </span>
         </div>
         {/* details */}
-        <div className="footer__details noLg">&copy; Olivia Williams 2021</div>
+        <div className="footer__details elem--noLg">
+          &copy; Olivia Williams 2021
+        </div>
       </div>
     </footer>
   );

@@ -12,6 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
   color: #191919;
 }
 
@@ -34,9 +35,4 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #8a8a8a;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
