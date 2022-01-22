@@ -1,6 +1,6 @@
 // import components
 import { Routes, Route } from "react-router-dom";
-import App from "../src/pages/app/app";
+import App from "../src/pages/App/App";
 
 // routes component
 const SiteRoutes = () => {

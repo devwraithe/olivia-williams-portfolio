@@ -2,7 +2,7 @@
 import React, { useState, useRef } from "react";
 import { NavLink } from "react-router-dom";
 // import styling
-import "./navbar.scss";
+import "./Navbar.scss";
 
 // navbar component
 function Navbar() {

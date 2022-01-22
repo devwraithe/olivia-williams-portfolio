@@ -3,7 +3,7 @@ import Layout from "../../components/layout/layout";
 import Embed from "../../components/embed/embed";
 import { motion } from "framer-motion";
 // import styling
-import "./app.scss";
+import "./App.scss";
 
 // home component
 const App = () => {

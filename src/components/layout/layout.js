@@ -1,5 +1,5 @@
 // import components
-import Navbar from "../navbar/navbar";
+import Navbar from "../navbar/Navbar";
 import Footer from "../footer/footer";
 // import styling
 import "./layout.scss";
