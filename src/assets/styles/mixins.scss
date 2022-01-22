@@ -1,0 +1,95 @@
+// import scss files
+@import "./bps.scss";
+@import "./variables.scss";
+
+// text sizing
+@mixin h1 {
+  font-size: calc(1.375rem + 1.5vw);
+  @media (min-width: 1200px) {
+    font-size: $h1;
+  }
+}
+
+@mixin h2 {
+  font-size: calc(1.325rem + 0.9vw);
+  @media (min-width: 1200px) {
+    font-size: $h2;
+  }
+}
+
+@mixin h3 {
+  font-size: calc(1.3rem + 0.6vw);
+  @media (min-width: 1200px) {
+    font-size: $h3;
+  }
+}
+
+@mixin h4 {
+  font-size: calc(1.275rem + 0.3vw);
+  @media (min-width: 1200px) {
+    font-size: $h4;
+  }
+}
+
+@mixin h5 {
+  font-size: $h5;
+}
+
+@mixin h6 {
+  font-size: $h6;
+}
+
+// margin & padding
+@mixin padx {
+  padding: 0 5vw;
+}
+
+@mixin pady {
+  padding: 2.5em 0;
+}
+
+@mixin defxy {
+  width: auto;
+  height: 100%;
+}
+
+// buttons
+@mixin button {
+  background-color: $dark;
+  border: 2px solid $dark;
+  color: $light;
+  font-weight: $bld;
+  padding: 1.3em 2.5em;
+  letter-spacing: 0.4px;
+  @include media-max(xs-max) {
+    padding: 1.5em 2.5em;
+  }
+  font-size: $btn;
+  font-family: "Libre Franklin", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+@mixin buttonHover {
+  background-color: $light;
+  color: $dark;
+  border: 2px solid $dark;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+
+// media
+@mixin embed {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+@mixin embed-source {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}

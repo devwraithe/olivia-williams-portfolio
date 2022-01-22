@@ -1,0 +1,93 @@
+// import globals
+@import "../../assets/styles/global.scss";
+
+// home component
+.about {
+  .header {
+    text-align: center;
+
+    &__wrapper {
+      @include media-max(xs-max) {
+        padding-top: 4em;
+      }
+      @include media-min(sm-min) {
+        padding: 3em;
+      }
+      @include media-min(lg-min) {
+        padding: 7em;
+        padding-bottom: 4em;
+      }
+    }
+
+    &__title {
+      font-weight: $xbd;
+      letter-spacing: 0.5px;
+      @include h1;
+      margin-top: 0;
+      line-height: 160%;
+    }
+
+    &__subtitle {
+      font-weight: $xbd;
+      letter-spacing: 0.5px;
+      margin-top: -1.2em;
+      @include h4;
+      @include media-max(xs-max) {
+        @include h5;
+        margin-top: -0.8em;
+        line-height: 160%;
+      }
+    }
+  }
+
+  .info {
+    @include media-max(sm-max) {
+      margin-top: 8em;
+    }
+    @include media-max(md-max) {
+      margin-bottom: 8em;
+    }
+    @include media-min(lg-min) {
+      padding: 0 4em;
+      margin-bottom: 10em;
+    }
+
+    &__wrapper {
+      @include media-min(md-min) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+        row-gap: 1px;
+      }
+      margin-top: 3em;
+    }
+
+    &__resume {
+      @include media-max(sm-max) {
+        margin-top: 3em;
+      }
+    }
+
+    &__sectionTitle {
+      @include h4;
+      font-weight: $xbd;
+      letter-spacing: 0.5px;
+    }
+
+    &__sectionSummary {
+      text-align: justify;
+      line-height: 185%;
+      font-weight: $mdm;
+      color: $gray-dark;
+    }
+
+    &__sectionBtn {
+      @include button;
+      margin-top: 1.5em;
+    }
+
+    &__sectionBtn--hover:hover {
+      @include buttonHover;
+    }
+  }
+}

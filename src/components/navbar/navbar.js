@@ -34,7 +34,7 @@ function Navbar() {
         </span>
         <span className="navbar__navItem">
           <NavLink to="/about" className="navbar__navLink">
-            ABOUT
+            ABOUT ME
           </NavLink>
         </span>
         <span className="navbar__navItem">
@@ -65,7 +65,7 @@ function Navbar() {
           </div>
           <div className="navbar__navSmItem">
             <NavLink to="/about" className="navbar__navSmLink">
-              ABOUT
+              ABOUT ME
             </NavLink>
           </div>
           <div className="navbar__navSmItem">

@@ -1,6 +1,7 @@
 // import components
 import { Routes, Route } from "react-router-dom";
 import App from "../src/pages/App/App";
+import About from "../src/pages/About/About";
 
 // routes component
 const SiteRoutes = () => {
@@ -8,7 +9,7 @@ const SiteRoutes = () => {
     <div>
       <Routes>
         <Route exact path="/" element={<App />}></Route>
-        {/* <Route path="/about" element={<Work />}></Route> */}
+        <Route path="/about" element={<About />}></Route>
       </Routes>
     </div>
   );
