@@ -1,11 +1,12 @@
-// import components
+// imports
+import Navbar from "../../components/navbar/navbar";
 import Layout from "../../components/layout/layout";
+import Footer from "../../components/footer/footer";
 import Embed from "../../components/embed/embed";
 import { motion } from "framer-motion";
-// import styling
-import "./App.scss";
+import "./app.scss";
 
-// home component
+// component
 const App = () => {
   const itemWrapVariants = {
     rest: { opacity: 0 },
@@ -18,9 +19,14 @@ const App = () => {
   };
 
   return (
-    <div className="index">
+    <div
+      className="index"
+      onLoad={document
+        .querySelector("body")
+        .classList.remove("no-overlayScroll")}
+    >
+      <Navbar />
       <Layout>
-        {/* header */}
         <header className="header">
           <div className="header__wrapper">
             <div className="header__intro">
@@ -56,10 +62,8 @@ const App = () => {
             </div>
           </div>
         </header>
-        {/* inspirations */}
         <section className="inspo">
           <div className="inspo__wrapper">
-            {/* title */}
             <div className="inspo__title">
               <div className="inspo__line1">
                 <svg width="100px" height="6px">
@@ -93,10 +97,8 @@ const App = () => {
             </div>
           </div>
         </section>
-        {/* work */}
         <section className="work">
           <div className="work__wrapper">
-            {/* title */}
             <div className="work__title">
               <div className="work__line1">
                 <svg width="100px" height="6px">
@@ -120,7 +122,6 @@ const App = () => {
                 </svg>
               </div>
             </div>
-            {/* content */}
             <div className="work__content">
               <motion.div
                 className="work__contentItem"
@@ -191,6 +192,7 @@ const App = () => {
           </div>
         </section>
       </Layout>
+      <Footer />
     </div>
   );
 };

@@ -5,6 +5,7 @@
 .footer {
   position: relative;
   @include pady;
+  @include padx;
 
   &__wrapper {
     @include media-max(md-max) {

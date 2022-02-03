@@ -1,0 +1,98 @@
+// imports
+@import "../../assets/styles/global.scss";
+
+// component
+.contact {
+  margin-top: 4.5em;
+
+  .header {
+    text-align: center;
+
+    &__wrapper {
+      @include header;
+    }
+
+    &__title {
+      font-weight: $xbd;
+      letter-spacing: 0.5px;
+      @include h1;
+      margin-top: 0;
+      line-height: 160%;
+    }
+
+    &__subtitle {
+      font-weight: $xbd;
+      letter-spacing: 0.5px;
+      margin-top: -1.2em;
+      @include h4;
+      @include media-max(xs-max) {
+        @include h5;
+        margin-top: -0.8em;
+        line-height: 165%;
+      }
+    }
+
+    &__pop {
+      color: $green;
+    }
+  }
+
+  .form {
+    @include media-max(xs-max) {
+      padding: 0 0.3em;
+    }
+
+    @include media-min(sm-min) {
+      padding: 0 12vw;
+    }
+
+    @include media-min(md-min) {
+      padding: 0 16vw;
+    }
+
+    @include media-min(lg-min) {
+      padding: 0 18vw;
+    }
+
+    @include media-min(xl-min) {
+      padding: 0 22vw;
+    }
+    margin-top: 0;
+    margin-bottom: 5em;
+
+    &__data {
+      justify-self: center;
+    }
+    &__input {
+      margin-bottom: 2em;
+      width: 100%;
+      position: relative;
+    }
+
+    &__label {
+      font-weight: $bld;
+    }
+
+    &__field {
+      border: 1.5px solid $gray;
+      margin-top: 1em;
+      width: calc(100% - 30px);
+      padding: 1.3em 1em;
+      font-family: "Libre Franklin";
+      font-weight: $mdm;
+    }
+
+    &__textarea {
+      height: 10em;
+    }
+
+    &__btn {
+      @include button;
+      margin-top: -1em;
+    }
+
+    &__btn--hover:hover {
+      @include buttonHover;
+    }
+  }
+}

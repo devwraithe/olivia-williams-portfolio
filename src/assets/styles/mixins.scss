@@ -41,11 +41,17 @@
 
 // margin & padding
 @mixin padx {
-  padding: 0 5vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  @include media-max(xs-max) {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
 }
 
 @mixin pady {
-  padding: 2.5em 0;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
 }
 
 @mixin defxy {
@@ -64,7 +70,7 @@
   @include media-max(xs-max) {
     padding: 1.5em 2.5em;
   }
-  font-size: $btn;
+  font-size: $cap1;
   font-family: "Libre Franklin", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
@@ -92,4 +98,17 @@
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+// page header
+@mixin header {
+  @include media-max(xs-max) {
+    padding: 4em 1em;
+  }
+  @include media-min(sm-min) {
+    padding: 3em;
+  }
+  @include media-min(lg-min) {
+    padding: 5em;
+  }
 }

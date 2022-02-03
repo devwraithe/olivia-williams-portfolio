@@ -1,19 +1,14 @@
-// import components
-import Navbar from "../navbar/Navbar";
-import Footer from "../footer/footer";
-// import styling
+// imports
 import "./layout.scss";
 
-// layout component
+// component
 const Layout = ({ children }) => {
   return (
     <div className="layout">
-      <Navbar />
       <main>{children}</main>
-      <Footer />
     </div>
   );
 };
 
-// export component
+// export
 export default Layout;
