@@ -52,6 +52,14 @@
       }
     }
 
+    &__img--sm {
+      margin-top: 2em;
+      margin-bottom: 1.8em;
+      @include media-min(lg-min) {
+        display: none;
+      }
+    }
+
     &__summary {
       text-align: justify;
       line-height: 200%;
@@ -69,14 +77,17 @@
     }
 
     &__img {
-      @include media-max(md-max) {
-        margin-top: 3.5em;
-      }
       @include media-min(lg-min) {
         object-fit: cover;
         height: 100%;
         width: 100%;
         position: relative;
+      }
+    }
+
+    &__img--lg {
+      @include media-max(md-max) {
+        display: none;
       }
     }
 
@@ -161,6 +172,10 @@
       @include media-min(md-min) {
         column-gap: 0;
       }
+    }
+
+    &__contentLink {
+      color: $dark;
     }
 
     &__contentItem {

@@ -57,7 +57,7 @@
     @include media-min(xl-min) {
       padding: 0 22vw;
     }
-    margin-top: 0;
+    margin-top: -1em;
     margin-bottom: 5em;
 
     &__data {
@@ -74,12 +74,16 @@
     }
 
     &__field {
-      border: 1.5px solid $gray;
+      border: 1.5px solid $gray-light;
       margin-top: 1em;
       width: calc(100% - 30px);
       padding: 1.3em 1em;
       font-family: "Libre Franklin";
       font-weight: $mdm;
+    }
+
+    &__field::placeholder {
+      color: $gray-light;
     }
 
     &__textarea {

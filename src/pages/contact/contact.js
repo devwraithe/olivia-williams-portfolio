@@ -54,9 +54,10 @@ function Contact() {
                 Message
               </label>
               <br />
-              <textarea className="form__field form__textarea">
-                Drop A Nice Message...
-              </textarea>
+              <textarea
+                className="form__field form__textarea"
+                placeholder="Drop A Nice Message..."
+              ></textarea>
             </div>
             <button className="form__btn form__btn--hover">Send Message</button>
           </form>

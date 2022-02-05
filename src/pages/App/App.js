@@ -34,6 +34,13 @@ const App = () => {
               <h4 className="header__subtitle">
                 I'm a UX Researcher and Designer
               </h4>
+              <div className="header__img header__img--sm">
+                <img
+                  className="header__imgSrc"
+                  src="https://images.pexels.com/photos/871495/pexels-photo-871495.jpeg"
+                  alt="olivia-williams-snapshot"
+                />
+              </div>
               <span className="header__summary">
                 <p>
                   I've always been fascinated by the way products are designed
@@ -43,17 +50,12 @@ const App = () => {
                   loopholes in ideas to create simpler and easier to use
                   products in the world.
                 </p>
-                <p>
-                  When i'm not working, I'm spending time with my family and
-                  friends playing board games and travelling. I enjoy going out
-                  for drinks, meeting new people and playing football.
-                </p>
               </span>
               <button className="header__btn header__btn--hover">
                 Contact Me
               </button>
             </div>
-            <div className="header__img">
+            <div className="header__img header__img--lg">
               <img
                 className="header__imgSrc"
                 src="https://images.pexels.com/photos/871495/pexels-photo-871495.jpeg"
@@ -123,71 +125,77 @@ const App = () => {
               </div>
             </div>
             <div className="work__content">
-              <motion.div
-                className="work__contentItem"
-                whileHover="hover"
-                animate="rest"
-              >
-                <motion.img
-                  src="http://images.squarespace-cdn.com/content/v1/547fe426e4b0dc192edb1ed5/1589867350400-OMHQTG1DMGE608HEJQ2P/Buy+on+Google_squarespace_banner.png?format=750w"
-                  className="work__contentItemImg"
-                  alt=""
-                  variants={itemImgVariants}
-                />
+              <a href="/case-study" class="work__contentLink">
                 <motion.div
-                  className="work__contentItemWrap"
-                  variants={itemWrapVariants}
+                  className="work__contentItem"
+                  whileHover="hover"
+                  animate="rest"
                 >
-                  <h1 className="work__contentItemTitle">Buy on Google</h1>
-                  <p className="work__contentItemRole">
-                    BRAND STRATEGY / USER EXPERIENCE
-                  </p>
+                  <motion.img
+                    src="http://images.squarespace-cdn.com/content/v1/547fe426e4b0dc192edb1ed5/1589867350400-OMHQTG1DMGE608HEJQ2P/Buy+on+Google_squarespace_banner.png?format=750w"
+                    className="work__contentItemImg"
+                    alt=""
+                    variants={itemImgVariants}
+                  />
+                  <motion.div
+                    className="work__contentItemWrap"
+                    variants={itemWrapVariants}
+                  >
+                    <h1 className="work__contentItemTitle">Buy on Google</h1>
+                    <p className="work__contentItemRole">
+                      BRAND STRATEGY / USER EXPERIENCE
+                    </p>
+                  </motion.div>
                 </motion.div>
-              </motion.div>
-              <motion.div
-                className="work__contentItem"
-                whileHover="hover"
-                animate="rest"
-              >
-                <motion.img
-                  src="https://images.squarespace-cdn.com/content/v1/547fe426e4b0dc192edb1ed5/1587231659543-BTAUFQ91UFD8R69J1LUG/loppet_squarespace+banner_ANIMATION.gif?format=750w"
-                  className="work__contentItemImg"
-                  alt=""
-                  variants={itemImgVariants}
-                />
+              </a>
+              <a href="/case-study" class="work__contentLink">
                 <motion.div
-                  className="work__contentItemWrap"
-                  variants={itemWrapVariants}
+                  className="work__contentItem"
+                  whileHover="hover"
+                  animate="rest"
                 >
-                  <h1 className="work__contentItemTitle">
-                    Loop Winter Festival
-                  </h1>
-                  <p className="work__contentItemRole">
-                    PRINTING / ILLUSTRATION
-                  </p>
+                  <motion.img
+                    src="https://images.squarespace-cdn.com/content/v1/547fe426e4b0dc192edb1ed5/1587231659543-BTAUFQ91UFD8R69J1LUG/loppet_squarespace+banner_ANIMATION.gif?format=750w"
+                    className="work__contentItemImg"
+                    alt=""
+                    variants={itemImgVariants}
+                  />
+                  <motion.div
+                    className="work__contentItemWrap"
+                    variants={itemWrapVariants}
+                  >
+                    <h1 className="work__contentItemTitle">
+                      Loop Winter Festival
+                    </h1>
+                    <p className="work__contentItemRole">
+                      PRINTING / ILLUSTRATION
+                    </p>
+                  </motion.div>
                 </motion.div>
-              </motion.div>
-              <motion.div
-                className="work__contentItem"
-                whileHover="hover"
-                animate="rest"
-              >
-                <motion.img
-                  src="https://images.squarespace-cdn.com/content/v1/547fe426e4b0dc192edb1ed5/1581238562474-Z7ERPIDJ660Z9NZPXMQC/squarespace+banner+square_animated.gif?format=750w"
-                  className="work__contentItemImg"
-                  alt=""
-                  variants={itemImgVariants}
-                />
+              </a>
+              <a href="/case-study" class="work__contentLink">
                 <motion.div
-                  className="work__contentItemWrap"
-                  variants={itemWrapVariants}
+                  className="work__contentItem"
+                  whileHover="hover"
+                  animate="rest"
                 >
-                  <h1 className="work__contentItemTitle"> VisD@</h1>
-                  <p className="work__contentItemRole">
-                    BRANDING / ILLUSTRATION
-                  </p>
+                  <motion.img
+                    src="https://images.squarespace-cdn.com/content/v1/547fe426e4b0dc192edb1ed5/1581238562474-Z7ERPIDJ660Z9NZPXMQC/squarespace+banner+square_animated.gif?format=750w"
+                    className="work__contentItemImg"
+                    alt=""
+                    variants={itemImgVariants}
+                  />
+                  <motion.div
+                    className="work__contentItemWrap"
+                    variants={itemWrapVariants}
+                  >
+                    <h1 className="work__contentItemTitle"> VisD@</h1>
+                    <p className="work__contentItemRole">
+                      BRANDING / ILLUSTRATION
+                    </p>
+                  </motion.div>
                 </motion.div>
-              </motion.div>
+              </a>
             </div>
           </div>
         </section>
